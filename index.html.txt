@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>5G - كود الخصم</title>
+<style>
+body {
+font-family: Arial;
+text-align: center;
+background: #111;
+color: white;
+padding-top: 100px;
+}
+button {
+padding: 15px 30px;
+font-size: 18px;
+background: gold;
+border: none;
+cursor: pointer;
+border-radius: 10px;
+}
+#code {
+margin-top: 20px;
+font-size: 24px;
+color: #00ffcc;
+}
+</style>
+</head>
+<body>
+
+<h1>🎁 احصل على كود خصم من 5G</h1>
+<p>اضغط على الزر للحصول على كودك الخاص</p>
+
+<button onclick="generateCode()">احصل على كودك</button>
+
+<div id="code"></div>
+
+<script>
+function generateCode() {
+let code = "5G" + Math.floor(1000 + Math.random() * 9000);
+document.getElementById("code").innerHTML = "كودك هو: " + code + "<br> صالح لمدة 3 أيام 🔥";
+}
+</script>
+
+</body>
+</html>
